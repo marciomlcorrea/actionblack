@@ -2899,6 +2899,41 @@ const ddData = [
         a:"Distributions begin in Year 2 on a quarterly basis. The investor does not need to wait for the exit to see returns — cumulative distributions over 6 years are estimated at €1,052,005 in the base case (7×)."} }
 ];
 
+function getDDItem(item) {
+  var l = (typeof lang !== "undefined" && lang === "pt") ? "pt" : "en";
+  return item[l] || item.en || item.pt;
+}
+
+var ddList = document.getElementById("ddList");
+function buildDD() {
+  if (!ddList) return;
+  ddList.innerHTML = "";
+  ddData.forEach(function(item, idx) {
+    var d = getDDItem(item);
+    var div = document.createElement("div");
+    div.className = "dd-item";
+    var qKey = "ddq_" + idx;
+    var aKey = "dda_" + idx;
+    if (!AB_T.pt[qKey]) { AB_T.pt[qKey] = item.pt ? item.pt.q : d.q; AB_T.en[qKey] = item.en ? item.en.q : d.q; }
+    if (!AB_T.pt[aKey]) { AB_T.pt[aKey] = item.pt ? item.pt.a : d.a; AB_T.en[aKey] = item.en ? item.en.a : d.a; }
+    var qDiv = document.createElement("div");
+    qDiv.className = "dd-q";
+    qDiv.innerHTML = '<span class="dd-qt" data-i="' + qKey + '">' + d.q + '</span>' +
+      '<span class="dd-tog"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span>';
+    qDiv.addEventListener("click", function() {
+      this.closest(".dd-item").classList.toggle("open");
+    });
+    var aDiv = document.createElement("div");
+    aDiv.className = "dd-ans";
+    aDiv.innerHTML = '<div class="dd-ans-in" data-i="' + aKey + '">' + d.a + "</div>";
+    div.appendChild(qDiv);
+    div.appendChild(aDiv);
+    ddList.appendChild(div);
+  });
+}
+if (ddList) { buildDD(); }
+
+
 
 
 /* ACTION BLACK INVESTOR PLATFORM v4 */
