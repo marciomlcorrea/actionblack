@@ -1,291 +1,41 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Action Black Portugal — Investor Teaser 2026</title>
-  <meta name="description" content="Premium boutique fitness platform. 15 clubs across Portugal. €11.75M investment opportunity."/>
-  <meta property="og:title" content="Action Black Portugal — Investor Teaser 2026"/>
-  <meta property="og:description" content="61 clubs. 10 countries. Now Portugal."/>
-  <meta property="og:type" content="website"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet"/>
-  <style>
-    @font-face {
-      font-family: 'Sequel100Black';
-      src: url('/actionblack/deck/fonts/Sequel100Black-55.woff2') format('woff2');
-      font-weight: 400; font-style: normal; font-display: swap;
-    }
-    @font-face {
-      font-family: 'Sequel100Black';
-      src: url('/actionblack/deck/fonts/Sequel100Black-75.woff2') format('woff2');
-      font-weight: 700; font-style: normal; font-display: swap;
-    }
-    @font-face {
-      font-family: 'DINPro';
-      src: url('/actionblack/deck/fonts/DINPro-Regular.woff2') format('woff2');
-      font-weight: 400; font-style: normal; font-display: swap;
-    }
-    @font-face {
-      font-family: 'DINPro';
-      src: url('/actionblack/deck/fonts/DINPro-Medium.woff2') format('woff2');
-      font-weight: 500; font-style: normal; font-display: swap;
-    }
-    @font-face {
-      font-family: 'DINPro';
-      src: url('/actionblack/deck/fonts/DINPro-Bold.woff2') format('woff2');
-      font-weight: 700; font-style: normal; font-display: swap;
-    }
-    :root {
-      --ab-black: #000000;
-      --ab-white: #FFFFFF;
-      --ab-darkgrey: #2B2B2B;
-      --ab-lightgrey: #ADADAD;
-      --ab-red: #E8192C;
-      --ab-display: 'Sequel100Black', 'Impact', sans-serif;
-      --ab-sans: 'DINPro', 'Helvetica Neue', Arial, sans-serif;
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { background: var(--ab-black); color: var(--ab-white); font-family: var(--ab-sans); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
-    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 20px 60px; display: flex; align-items: center; justify-content: space-between; background: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent); }
-    .nav-logo { font-family: var(--ab-display); font-size: 18px; letter-spacing: 0.15em; color: var(--ab-white); text-decoration: none; }
-    .nav-cta { font-family: var(--ab-sans); font-size: 13px; letter-spacing: 0.12em; color: var(--ab-white); text-decoration: none; text-transform: uppercase; border: 1px solid rgba(255,255,255,0.3); padding: 10px 24px; transition: all 0.2s; }
-    .nav-cta:hover { background: var(--ab-white); color: var(--ab-black); }
-    section { position: relative; overflow: hidden; }
-    #hero { min-height: 100svh; background: var(--ab-black); display: flex; flex-direction: column; justify-content: flex-end; padding: 0 60px 80px; }
-    .hero-eyebrow { font-family: var(--ab-sans); font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ab-lightgrey); margin-bottom: 24px; }
-    .hero-title { font-family: var(--ab-display); font-size: clamp(64px, 10vw, 140px); line-height: 0.92; letter-spacing: -0.01em; color: var(--ab-white); margin-bottom: 40px; }
-    .hero-title span { color: var(--ab-red); }
-    .hero-subtitle { font-family: var(--ab-sans); font-size: 18px; font-weight: 400; color: rgba(255,255,255,0.5); max-width: 480px; line-height: 1.6; margin-bottom: 60px; }
-    .hero-stats { display: flex; gap: 60px; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 40px; }
-    .hero-stat-value { font-family: var(--ab-display); font-size: 42px; color: var(--ab-white); display: block; }
-    .hero-stat-label { font-family: var(--ab-sans); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ab-lightgrey); display: block; margin-top: 6px; }
-    .hero-scroll { position: absolute; bottom: 80px; right: 60px; font-family: var(--ab-sans); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.3); writing-mode: vertical-rl; }
-    .hero-line { position: absolute; top: 0; right: 0; width: 1px; height: 40%; background: var(--ab-red); opacity: 0.4; }
-    .section-inner { max-width: 1200px; margin: 0 auto; padding: 120px 60px; }
-    .section-label { font-family: var(--ab-sans); font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--ab-red); margin-bottom: 20px; display: block; }
-    .section-title { font-family: var(--ab-display); font-size: clamp(42px, 6vw, 80px); line-height: 0.95; color: var(--ab-white); margin-bottom: 24px; }
-    .section-body { font-family: var(--ab-sans); font-size: 18px; color: rgba(255,255,255,0.5); line-height: 1.7; max-width: 600px; margin-bottom: 64px; }
-    #market { background: #050508; }
-    .market-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.08); margin-top: 64px; }
-    .market-cell { background: #050508; padding: 40px 32px; }
-    .market-cell-value { font-family: var(--ab-display); font-size: 52px; color: var(--ab-white); display: block; margin-bottom: 8px; }
-    .market-cell-value.red { color: var(--ab-red); }
-    .market-cell-label { font-family: var(--ab-sans); font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ab-lightgrey); }
-    .market-cell-sub { font-family: var(--ab-sans); font-size: 14px; color: rgba(255,255,255,0.4); margin-top: 8px; line-height: 1.5; }
-    #platform { background: var(--ab-black); }
-    .platform-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; margin-top: 64px; }
-    .phase-card { border: 1px solid rgba(255,255,255,0.1); padding: 40px; }
-    .phase-label { font-family: var(--ab-sans); font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--ab-red); margin-bottom: 16px; }
-    .phase-title { font-family: var(--ab-display); font-size: 32px; color: var(--ab-white); margin-bottom: 8px; }
-    .phase-sub { font-family: var(--ab-sans); font-size: 14px; color: rgba(255,255,255,0.4); margin-bottom: 32px; }
-    .phase-row { display: flex; justify-content: space-between; border-top: 1px solid rgba(255,255,255,0.08); padding: 14px 0; }
-    .phase-row-label { font-size: 14px; color: rgba(255,255,255,0.5); }
-    .phase-row-value { font-family: var(--ab-display); font-size: 16px; color: var(--ab-white); }
-    .platform-timeline { margin-top: 80px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 48px; }
-    .timeline-title { font-family: var(--ab-sans); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ab-lightgrey); margin-bottom: 32px; }
-    .timeline-track { display: flex; gap: 0; }
-    .timeline-step { flex: 1; position: relative; }
-    .timeline-step::before { content: ''; position: absolute; top: 8px; left: 0; right: 0; height: 1px; background: rgba(255,255,255,0.15); }
-    .timeline-dot { width: 16px; height: 16px; border-radius: 50%; background: var(--ab-darkgrey); border: 1px solid rgba(255,255,255,0.2); position: relative; z-index: 1; margin-bottom: 16px; }
-    .timeline-dot.active { background: var(--ab-red); border-color: var(--ab-red); }
-    .timeline-year { font-family: var(--ab-display); font-size: 18px; color: var(--ab-white); display: block; }
-    .timeline-name { font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 4px; }
-    #returns { background: #050508; }
-    .returns-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.08); margin-top: 64px; }
-    .returns-card { background: #050508; padding: 48px 40px; }
-    .returns-card-tag { font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--ab-red); margin-bottom: 20px; display: block; }
-    .returns-card-scenario { font-family: var(--ab-display); font-size: 22px; color: var(--ab-white); margin-bottom: 32px; }
-    .returns-row { display: flex; justify-content: space-between; border-top: 1px solid rgba(255,255,255,0.08); padding: 12px 0; }
-    .returns-row-label { font-size: 12px; color: rgba(255,255,255,0.4); }
-    .returns-row-value { font-family: var(--ab-display); font-size: 14px; color: var(--ab-white); }
-    .returns-row-value.highlight { color: var(--ab-red); }
-    .returns-note { margin-top: 48px; font-size: 13px; color: rgba(255,255,255,0.3); line-height: 1.6; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 24px; }
-    #opportunity { background: var(--ab-black); }
-    .opp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 64px; }
-    .opp-card { border: 1px solid rgba(255,255,255,0.1); padding: 40px 32px; position: relative; }
-    .opp-card.featured { border-color: var(--ab-red); }
-    .opp-card-badge { position: absolute; top: -1px; left: 32px; background: var(--ab-red); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; padding: 5px 12px; color: var(--ab-white); }
-    .opp-num { font-family: var(--ab-display); font-size: 72px; color: rgba(255,255,255,0.06); line-height: 1; margin-bottom: 16px; }
-    .opp-title { font-family: var(--ab-display); font-size: 22px; color: var(--ab-white); margin-bottom: 8px; }
-    .opp-vehicle { font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ab-red); margin-bottom: 24px; }
-    .opp-detail { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.6; margin-bottom: 24px; }
-    .opp-kv { margin-top: auto; }
-    .opp-kv-row { display: flex; justify-content: space-between; border-top: 1px solid rgba(255,255,255,0.08); padding: 10px 0; }
-    .opp-kv-label { font-size: 11px; color: rgba(255,255,255,0.35); }
-    .opp-kv-value { font-family: var(--ab-display); font-size: 13px; color: var(--ab-white); }
-    #cta { background: var(--ab-red); padding: 120px 60px; }
-    .cta-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: flex-end; }
-    .cta-title { font-family: var(--ab-display); font-size: clamp(48px, 8vw, 100px); line-height: 0.92; color: var(--ab-white); }
-    .cta-right { text-align: right; }
-    .cta-deadline { font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.7); margin-bottom: 24px; }
-    .cta-btn { display: inline-block; font-family: var(--ab-display); font-size: 16px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ab-red); background: var(--ab-white); padding: 18px 48px; text-decoration: none; transition: all 0.2s; }
-    .cta-btn:hover { background: var(--ab-black); color: var(--ab-white); }
-    .cta-link { display: block; margin-top: 16px; font-size: 13px; color: rgba(255,255,255,0.6); text-decoration: none; letter-spacing: 0.1em; }
-    footer { background: var(--ab-black); padding: 40px 60px; border-top: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center; }
-    .footer-brand { font-family: var(--ab-display); font-size: 14px; letter-spacing: 0.15em; color: rgba(255,255,255,0.4); }
-    .footer-legal { font-size: 12px; color: rgba(255,255,255,0.25); text-align: right; line-height: 1.6; }
-    .red-line { width: 40px; height: 2px; background: var(--ab-red); margin-bottom: 32px; }
-    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
-    .fade-in.visible { opacity: 1; transform: none; }
-    @media (max-width: 768px) {
-      nav { padding: 20px 24px; } .section-inner { padding: 80px 24px; } #hero { padding: 0 24px 60px; }
-      .hero-stats { flex-wrap: wrap; gap: 32px; } .market-grid { grid-template-columns: 1fr 1fr; }
-      .platform-cols { grid-template-columns: 1fr; gap: 32px; } .returns-grid { grid-template-columns: 1fr; }
-      .opp-grid { grid-template-columns: 1fr; } .cta-inner { flex-direction: column; gap: 48px; }
-      .cta-right { text-align: left; } footer { flex-direction: column; gap: 16px; }
-      .footer-legal { text-align: left; } .hero-scroll { display: none; }
-    }
-  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TODO: Set the document title to the name of your application -->
+    <title>Action Black - Investor Deck 2026</title>
+    <meta name="description" content="We&#39;re not a f*cking gym!">
+    <meta name="author" content="Lovable" />
+
+    <!-- TODO: Update og:title to match your application name -->
+    
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/3f194101-5b74-4191-bbce-d4700330b7a2">
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Lovable" />
+    <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/3f194101-5b74-4191-bbce-d4700330b7a2">
+    
+  
+  
+  
+
+  <!-- Playfair Display — used for editorial pull-quotes (e.g., Wilder quote) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Action Black - Investor Deck 2026">
+  <meta name="twitter:title" content="Action Black - Investor Deck 2026">
+  <meta property="og:description" content="We&#39;re not a f*cking gym!">
+  <meta name="twitter:description" content="We&#39;re not a f*cking gym!">
+  <script type="module" crossorigin src="/actionblack/deck/assets/main-Dee8_JO1.js"></script>
+  <link rel="modulepreload" crossorigin href="/actionblack/deck/assets/index-CcWn1CeX.js">
+  <link rel="stylesheet" crossorigin href="/actionblack/deck/assets/index-DEBriyRW.css">
 </head>
-<body>
-<nav>
-  <a href="#hero" class="nav-logo">ACTION BLACK</a>
-  <a href="https://investordeck.actionblackpt.com" class="nav-cta" target="_blank">Full Deck →</a>
-</nav>
-<section id="hero">
-  <div class="hero-line"></div>
-  <p class="hero-eyebrow">Confidential · Investor Teaser · Portugal 2026</p>
-  <h1 class="hero-title">PREMIUM<br>BOUTIQUE<br><span>FITNESS.</span></h1>
-  <p class="hero-subtitle">61 clubs. 10 countries. $58M valuation. Now Portugal — 15 locations over 60 months, three already under construction in Lisbon.</p>
-  <div class="hero-stats">
-    <div><span class="hero-stat-value">61</span><span class="hero-stat-label">Clubs · 10 Countries</span></div>
-    <div><span class="hero-stat-value">&lt;4%</span><span class="hero-stat-label">Monthly Churn</span></div>
-    <div><span class="hero-stat-value">€89</span><span class="hero-stat-label">Monthly Fee · Premium</span></div>
-    <div><span class="hero-stat-value">~15mo</span><span class="hero-stat-label">CAPEX Payback</span></div>
-  </div>
-  <span class="hero-scroll">Scroll to explore</span>
-</section>
-<section id="market">
-  <div class="section-inner">
-    <div class="fade-in"><span class="section-label">The Opportunity</span><div class="red-line"></div><h2 class="section-title">PORTUGAL IS<br>10 YEARS BEHIND.</h2><p class="section-body">Boutique fitness penetration in Portugal sits below 1%. Spain is at 12%. The UK at 16%. The USA at 22%. This gap is the thesis — and the entry window is closing.</p></div>
-    <div class="market-grid fade-in">
-      <div class="market-cell"><span class="market-cell-value red">&lt;1%</span><span class="market-cell-label">Portugal</span><p class="market-cell-sub">Zero premium boutique competition in Lisbon.</p></div>
-      <div class="market-cell"><span class="market-cell-value">12%</span><span class="market-cell-label">Spain</span><p class="market-cell-sub">12× ahead. Same language market. Template proven.</p></div>
-      <div class="market-cell"><span class="market-cell-value">16%</span><span class="market-cell-label">United Kingdom</span><p class="market-cell-sub">The benchmark market. Boutique premium is mainstream.</p></div>
-      <div class="market-cell"><span class="market-cell-value">22%</span><span class="market-cell-label">United States</span><p class="market-cell-sub">Fully saturated. The model was validated here first.</p></div>
-    </div>
-  </div>
-</section><section id="platform">
-  <div class="section-inner">
-    <div class="fade-in"><span class="section-label">The Platform</span><div class="red-line"></div><h2 class="section-title">15 CLUBS.<br>60 MONTHS.</h2><p class="section-body">Two-phase rollout. Phase 1 anchors Lisbon — three locations already under construction. Phase 2 scales nationally via ring-fenced regional SPVs.</p></div>
-    <div class="platform-cols fade-in">
-      <div class="phase-card"><p class="phase-label">Phase 1 — Now Open</p><h3 class="phase-title">ABLX · LISBON</h3><p class="phase-sub">Years 1–3 · 3 Anchor Clubs · Under Construction</p>
-        <div class="phase-row"><span class="phase-row-label">Locations</span><span class="phase-row-value">Saldanha · S. Sebastião · PdN</span></div>
-        <div class="phase-row"><span class="phase-row-label">Total CAPEX</span><span class="phase-row-value">€3.19M</span></div>
-        <div class="phase-row"><span class="phase-row-label">Investor Participation</span><span class="phase-row-value">40% of ABLX</span></div>
-        <div class="phase-row"><span class="phase-row-label">Y3 EBITDA (projected)</span><span class="phase-row-value">€2.5M</span></div>
-        <div class="phase-row"><span class="phase-row-label">CAPEX Payback</span><span class="phase-row-value">~15 months</span></div>
-        <div class="phase-row"><span class="phase-row-label">Close Deadline</span><span class="phase-row-value">30 April 2026</span></div>
-      </div>
-      <div>
-        <div class="phase-card" style="margin-bottom:32px"><p class="phase-label">Phase 2 — Porto SPV</p><h3 class="phase-title">ABPO · 4 CLUBS</h3><p class="phase-sub">Years 3–5 · Regional SPV</p>
-          <div class="phase-row"><span class="phase-row-label">CAPEX</span><span class="phase-row-value">€3.4M</span></div>
-          <div class="phase-row"><span class="phase-row-label">Y5 EBITDA</span><span class="phase-row-value">€1.4M</span></div>
-          <div class="phase-row"><span class="phase-row-label">ABPT / Investors</span><span class="phase-row-value">15% / 85%</span></div>
-        </div>
-        <div class="phase-card"><p class="phase-label">Phase 2 — Secondary SPV</p><h3 class="phase-title">ABCS · 4 CLUBS</h3><p class="phase-sub">Years 3–5 · Regional SPV</p>
-          <div class="phase-row"><span class="phase-row-label">CAPEX</span><span class="phase-row-value">€2.4M</span></div>
-          <div class="phase-row"><span class="phase-row-label">Y5 EBITDA</span><span class="phase-row-value">€900K</span></div>
-          <div class="phase-row"><span class="phase-row-label">ABPT / Investors</span><span class="phase-row-value">15% / 85%</span></div>
-        </div>
-      </div>
-    </div>
-    <div class="platform-timeline fade-in"><p class="timeline-title">Opening Schedule — 15 Clubs · 2026–2031</p>
-      <div class="timeline-track">
-        <div class="timeline-step"><div class="timeline-dot active"></div><span class="timeline-year">Q3 '26</span><span class="timeline-name">Saldanha</span></div>
-        <div class="timeline-step"><div class="timeline-dot active"></div><span class="timeline-year">Q4 '26</span><span class="timeline-name">S. Sebastião</span></div>
-        <div class="timeline-step"><div class="timeline-dot active"></div><span class="timeline-year">Q2 '27</span><span class="timeline-name">Parque Nações</span></div>
-        <div class="timeline-step"><div class="timeline-dot"></div><span class="timeline-year">Q3 '27</span><span class="timeline-name">Cascais</span></div>
-        <div class="timeline-step"><div class="timeline-dot"></div><span class="timeline-year">Q1 '28</span><span class="timeline-name">Porto Centro</span></div>
-        <div class="timeline-step"><div class="timeline-dot"></div><span class="timeline-year">2029–31</span><span class="timeline-name">+10 Regional</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="returns">
-  <div class="section-inner">
-    <div class="fade-in"><span class="section-label">Returns — Phase 1 · ABLX</span><div class="red-line"></div><h2 class="section-title">CHOOSE YOUR<br>MULTIPLE.</h2><p class="section-body">€1.5M for 40% of ABLX. Capital deployed in 3 tranches against execution milestones. Quarterly distributions from Year 2. Exit via EBITDA multiple from Year 3.</p></div>
-    <div class="returns-grid fade-in">
-      <div class="returns-card"><span class="returns-card-tag">Downside</span><p class="returns-card-scenario">CONSERVATIVE · 5×</p>
-        <div class="returns-row"><span class="returns-row-label">Exit Value</span><span class="returns-row-value">€3.17M</span></div>
-        <div class="returns-row"><span class="returns-row-label">Distributions (6Y)</span><span class="returns-row-value">€1.05M</span></div>
-        <div class="returns-row"><span class="returns-row-label">Total Return</span><span class="returns-row-value">€4.22M</span></div>
-        <div class="returns-row"><span class="returns-row-label">MOIC</span><span class="returns-row-value">2.81×</span></div>
-        <div class="returns-row"><span class="returns-row-label">IRR</span><span class="returns-row-value">21.2%</span></div>
-      </div>
-      <div class="returns-card"><span class="returns-card-tag">Base Case</span><p class="returns-card-scenario">BASE · 7×</p>
-        <div class="returns-row"><span class="returns-row-label">Exit Value</span><span class="returns-row-value">€4.44M</span></div>
-        <div class="returns-row"><span class="returns-row-label">Distributions (6Y)</span><span class="returns-row-value">€1.05M</span></div>
-        <div class="returns-row"><span class="returns-row-label">Total Return</span><span class="returns-row-value">€5.49M</span></div>
-        <div class="returns-row"><span class="returns-row-label">MOIC</span><span class="returns-row-value highlight">3.66×</span></div>
-        <div class="returns-row"><span class="returns-row-label">IRR</span><span class="returns-row-value highlight">26.7%</span></div>
-      </div>
-      <div class="returns-card"><span class="returns-card-tag">Upside</span><p class="returns-card-scenario">PREMIUM · 10×</p>
-        <div class="returns-row"><span class="returns-row-label">Exit Value</span><span class="returns-row-value">€6.34M</span></div>
-        <div class="returns-row"><span class="returns-row-label">Distributions (6Y)</span><span class="returns-row-value">€1.05M</span></div>
-        <div class="returns-row"><span class="returns-row-label">Total Return</span><span class="returns-row-value">€7.39M</span></div>
-        <div class="returns-row"><span class="returns-row-label">MOIC</span><span class="returns-row-value">4.93×</span></div>
-        <div class="returns-row"><span class="returns-row-label">IRR</span><span class="returns-row-value">33.1%</span></div>
-      </div>
-    </div>
-    <p class="returns-note fade-in">Gompertz growth model. Churn 3–4%/month from Month 1. EBITDA break-even Month 5. Stress-tested at −40% members and −20% margin simultaneously. Full financial model available upon request.</p>
-  </div>
-</section>
-<section id="opportunity">
-  <div class="section-inner">
-    <div class="fade-in"><span class="section-label">How to Invest</span><div class="red-line"></div><h2 class="section-title">THREE WAYS<br>TO ENTER.</h2><p class="section-body">From Lisbon anchor clubs to a controlling position in the HoldCo. Each vehicle is a ring-fenced SPV with independent cap table and governance.</p></div>
-    <div class="opp-grid fade-in">
-      <div class="opp-card featured"><span class="opp-card-badge">Open Now</span><div class="opp-num">01</div><h3 class="opp-title">ANCHOR</h3><p class="opp-vehicle">ABLX · Lisbon Originals</p><p class="opp-detail">3 anchor clubs in Lisbon already under construction. Quarterly distributions from Year 2.</p>
-        <div class="opp-kv">
-          <div class="opp-kv-row"><span class="opp-kv-label">Investment</span><span class="opp-kv-value">€1.5M</span></div>
-          <div class="opp-kv-row"><span class="opp-kv-label">Participation</span><span class="opp-kv-value">40% of ABLX</span></div>
-          <div class="opp-kv-row"><span class="opp-kv-label">Close</span><span class="opp-kv-value">30 Apr 2026</span></div>
-          <div class="opp-kv-row"><span class="opp-kv-label">IRR (base)</span><span class="opp-kv-value">26.7%</span></div>
-        </div>
-      </div>
-      <div class="opp-card"><div class="opp-num">02</div><h3 class="opp-title">SCALE</h3><p class="opp-vehicle">ABPO + ABCS · Regional SPVs</p><p class="opp-detail">12 clubs in Porto and secondary cities via 3 dedicated SPVs. Phase 1 investors have preference rights.</p>
-        <div class="opp-kv">
-          <div class="opp-kv-row"><span class="opp-kv-label">Investment</span><span class="opp-kv-value">€8.13M</span></div>
-          <div class="opp-kv-row"><span class="opp-kv-label">Participation</span><span class="opp-kv-value">85% per SPV</span></div>
-          <div class="opp-kv-row"><span class="opp-kv-label">Close</span><span class="opp-kv-value">Q4 2027 · phased</span></div>
-          <div class="opp-kv-row"><span class="opp-kv-label">IRR (base)</span><span class="opp-kv-value">37.1%</span></div>
-        </div>
-      </div>
-      <div class="opp-card"><div class="opp-num">03</div><h3 class="opp-title">CONTROL</h3><p class="opp-vehicle">ABPT HoldCo · Control Position</p><p class="opp-detail">Controlling position at HoldCo level — governance plus full 15-club portfolio, Spain option, and future master franchise territories.</p>
-        <div class="opp-kv">
-          <div class="opp-kv-row"><span class="opp-kv-label">Total Platform</span><span class="opp-kv-value">€21.83M</span></div>
-          <div class="opp-kv-row"><span class="opp-kv-label">Participation</span><span class="opp-kv-value">Up to 67% · negotiable</span></div>
-          <div class="opp-kv-row"><span class="opp-kv-label">Access</span><span class="opp-kv-value">By invitation</span></div>
-          <div class="opp-kv-row"><span class="opp-kv-label">Briefing</span><span class="opp-kv-value">Request below</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="cta">
-  <div class="cta-inner">
-    <h2 class="cta-title">WE NEVER<br>STOP.</h2>
-    <div class="cta-right">
-      <p class="cta-deadline">Deadline — 30 April 2026</p>
-      <a href="https://investordeck.actionblackpt.com" class="cta-btn" target="_blank">Request Full Deck</a>
-      <a href="mailto:marcio.correa@actionblack.co" class="cta-link">marcio.correa@actionblack.co</a>
-    </div>
-  </div>
-</section>
-<footer>
-  <span class="footer-brand">ACTION BLACK PORTUGAL, LDA. · NIPC 517 807 998</span>
-  <div class="footer-legal">Av. 5 de Outubro, 56-B · 1050-058 Lisboa<br>Confidential · For qualified investors only · 2026</div>
-</footer>
-<script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
-  }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
-  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-</script>
-</body>
+
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
-
-
